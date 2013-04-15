@@ -1,0 +1,12 @@
+AUTH_TOKEN = ''
+HTTP_BASIC_AUTH = ['user', 'pass']
+FORMSITE = {api_key: "", 
+  jobfair_form: "https://fs6.formsite.com/api/users/rpconference/forms/form7",
+  startupfair_form: "https://fs6.formsite.com/api/users/rpconference/forms/form8"}
+LANYRD = {name: "acmreflections"}
+EVENTBRITE = { 
+  auth_tokens: { 
+    app_key: '',
+    user_key: ''},
+  event_id: 6181219193
+}

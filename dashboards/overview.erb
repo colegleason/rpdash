@@ -1,0 +1,35 @@
+<script type='text/javascript'>
+$(function() {
+Dashing.gridsterLayout('[{"col":2,"row":1},{"col":1,"row":1},{"col":2,"row":2},{"col":1,"row":2},{"col":3,"row":2},{"col":4,"row":1}]')
+});
+</script>
+
+<% content_for(:title) { "Reflections | Projections 2013" } %>
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="welcome" data-view="Text" data-title="Reflections | Projections 2013" data-text="The best conference around!" data-moreinfo="http://rp.cs.illinois.edu"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    	<div data-view="Countdown" data-title="Days left" data-end="10-Oct-2013"></div>
+</li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="companies" data-view="Number" data-title="Job Fair Companies" data-min="0" data-max="50"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="attendees" data-view="Number" data-title="Attendees" data-min="0" data-max="1000"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="startups" data-view="Number" data-title="Startups" data-min="0" data-max="50"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="speakers" data-view="List" data-unordered="true" data-title="Speakers" data-moreinfo="speakers confirmed so far"></div>
+    </li>
+
+  </ul>
+</div>
