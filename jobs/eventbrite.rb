@@ -5,6 +5,10 @@ require File.expand_path("../../auth_info.rb", __FILE__)
 SCHEDULER.every '5m', :first_in => 0 do |job|
   @eb_client = EventbriteClient.new(EVENTBRITE[:auth_tokens])
   response = @eb_client.event_list_attendees({id: EVENTBRITE[:event_id]})
-  send_event('attendees', {current: response["attendees"].length})
+  total = 0
+  response["attendees"].each do |el|
+    total = total + el["attendee"]["quantity"]
+  end
+  send_event('attendees', {current: total})
 
 end
